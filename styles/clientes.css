@@ -1,0 +1,58 @@
+.clientes {
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+
+    margin-top: 107px;
+}
+
+.clientes h2 {
+    text-align: center;
+
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.images img {
+    width: 150px;
+    height: auto;
+}
+
+.carrossel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carrossel-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll 40s linear infinite;
+}
+
+.images {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.images img {
+  height: 60px;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
