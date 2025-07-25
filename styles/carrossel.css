@@ -1,0 +1,163 @@
+.carrossel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 82px;
+  margin-top: 107px;
+}
+
+.carrossel h2 {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.carrossel h2 span {
+  color: var(--color-orange);
+}
+
+/* ENVOLVE AS SETAS + OS CARDS */
+.carrossel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* CONTAINER DOS CARDS */
+.cards {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+
+  /* Remove barra de rolagem */
+  -ms-overflow-style: none; /* IE e Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+.cards::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* CARD INDIVIDUAL */
+.card-wrapper {
+  max-width: 488px;
+  height: 600px;
+  padding: 40px;
+
+  border: 1px solid var(--color-orange);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  background-color: #0a0a0a;
+  flex-shrink: 0;
+}
+
+/* TOPO DO CARD */
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.icon img {
+  width: 47px;
+  height: auto;
+}
+.icon p {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* TÍTULOS E DESCRIÇÕES */
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.title h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+}
+.title p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-align: left;
+}
+
+/* LISTA DE ITENS COM ÍCONES */
+.itens {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.item img {
+  width: 20px;
+  height: auto;
+}
+.item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  text-align: left;
+}
+
+/* BOTÃO */
+.card-wrapper .button button {
+  margin: 0 auto;
+  background: var(--color-linear-green);
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 12px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+}
+
+/* SETAS */
+.arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.arrow img {
+  width: 32px;
+  height: 32px;
+  /* rotate: -90deg; */
+  /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(100%); */
+}
+
+.arrow .left {
+  left: -15px;
+}
+.arrow.right {
+  right: -15px;
+  transform: translateY(-50%) ;
+}
+
+.rolar {
+  padding: 0;
+
+  margin-left: -5px;
+}
+
+
