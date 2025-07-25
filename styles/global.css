@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --color-background: #060411;
+    --color-linear-orange: linear-gradient(to right, #FF9000 25%, #FFBA00 100%);
+    --color-orange: #EFB440;
+    --color-linear-green: linear-gradient(to right, #36EE30 0%, #1B6118 90%);
+    --color-white: #F5F3ED;
+    --color-stroke-form: #616060;
+    --color-background-form: #1B1B1B;
+    --color-input: #333234;
+    --color-black: #000;
+    --color-text-secondary: #878787;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+
+    color: var(--color-white);
+
+    background-color: var(--color-background);
+}
+
+a {
+    color: white;
+
+    text-decoration: none;
+}
