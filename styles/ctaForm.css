@@ -1,0 +1,179 @@
+.section-cta-form {
+    max-width: 100%;
+
+    padding: 90px;
+
+    margin-top: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid var(--color-stroke-form);
+    border-radius: 50px;
+    
+    background: var(--color-background-form);
+}
+
+.infos {
+    max-width: 452px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title h2 {
+    font-size: 35px;
+    font-weight: 600;
+
+    margin: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.trace {
+    width: 100px;
+    height: 1px;
+    
+    background: var(--color-orange);
+}
+
+.line > p {
+    font-size: 16px;
+    font-weight: 600;
+
+    color: var(--color-orange);
+}
+
+.geral {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.image {
+    background: var(--color-linear-orange);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px;
+
+    border-radius: 10px;
+}
+
+.image img {
+    width: 29px;
+    height: auto;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.description h3 {
+    margin: 0;
+
+    font-size: 21px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.description p {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+
+    color: var(--color-text-secondary);
+}
+
+
+
+
+
+
+
+
+
+.form {
+    width: 450px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 100%;
+}
+
+input,
+select {
+    padding: 27px 17px;
+    
+    border: none;
+    border-style: none;
+    border-radius: 10px;
+
+    background-color: var(--color-input);
+    color: var(--color-white);
+}
+
+::placeholder {
+    color: var(--color-white);
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+select {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("/assets/arrow-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 15px 20px;
+
+    
+}
+
+select, option {
+    font-size: 16px;
+}
+
+.section-cta-form .form form > button {
+   background: var(--color-linear-orange); 
+
+   padding: 14px;
+
+   border-radius: 2px;
+
+   color: var(--color-black);
+
+   font-size: 18px;
+   font-weight: 500;
+
+   margin-top: 0px;
+}
