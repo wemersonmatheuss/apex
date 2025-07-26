@@ -21,6 +21,7 @@ body {
 
 body, html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -42,3 +43,30 @@ a {
 
     text-decoration: none;
 }
+
+button {
+    transition: opacity 0.3s ease-in-out;
+
+    animation: pulseGlowOrange 2s infinite;
+
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+@keyframes pulseGlowOrange {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 144, 0, 0.6);
+  }
+  50% {
+    transform: scale(1.07);
+    box-shadow: 0 0 15px 6px rgba(229, 137, 18, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 144, 0, 0);
+  }
+}
+
