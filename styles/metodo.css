@@ -45,3 +45,44 @@
 .metodo .image img {
     width: 700px;
 }
+
+.description-metodo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.info-metodo {
+    background-color: #2A2A2A;
+
+    padding: 20px 15px;
+
+    border-radius: 24px;
+
+    text-align: left;
+
+    max-width: 190px;
+
+}
+
+.info-metodo h4 {
+    color: var(--color-orange);
+
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+
+    margin: 0;
+}
+
+.info-metodo p {
+    font-size: 16px;
+    font-weight: 400;
+
+    text-align: left;
+
+    margin-top: 5px;
+}
