@@ -10,3 +10,13 @@ function scrollCarrossel(direction) {
     });
 }
 
+
+function scrollToFormulario() {
+  const formSection = document.getElementById("section-formulario");
+  if (formSection) {
+    formSection.scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+}
+
