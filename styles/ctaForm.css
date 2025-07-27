@@ -235,3 +235,49 @@ select, option {
 .section-cta-form.animate-form form select:nth-of-type(2) { transition-delay: 1.2s; }
 .section-cta-form.animate-form form button { transition-delay: 1.4s; }
 
+
+
+@media screen and (max-width: 450px) {
+    .section-cta-form {
+        padding: 60px 30px;
+
+        border-radius: 22px;
+
+        flex-direction: column;
+    }
+
+    .title h2 {
+        font-size: 28px;
+
+        text-align: center;
+        line-height: 120%;
+    }
+
+    .geral {
+        flex-direction: column;
+    }
+
+    .description {
+        gap: 8px;
+    }
+
+    .description h3 {
+        text-align: center;
+    }
+
+    .description p {
+        text-align: center;
+    }
+
+    .form {
+        width: 100%;
+
+        margin-top: 60px;
+    }
+
+    input,
+    select {
+        padding: 16px 12px;
+    }
+}
+
