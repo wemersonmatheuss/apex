@@ -40,3 +40,25 @@ const observer = new IntersectionObserver(
 
 observer.observe(sectionFormulario);
 
+
+
+// Animação dos cards do carrossel
+const sectionCarrossel = document.querySelector('.carrossel');
+
+const observerCarrossel = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        sectionCarrossel.classList.add('animate-cards');
+        observerCarrossel.unobserve(sectionCarrossel); // só uma vez
+      }
+    });
+  },
+  {
+    threshold: 0.3
+  }
+);
+
+observerCarrossel.observe(sectionCarrossel);
+
+
