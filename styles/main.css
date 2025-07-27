@@ -89,3 +89,17 @@ button {
   }
 }
 
+@media screen and (max-width: 450px) {
+  main {
+    padding: 10px;
+
+    margin: 20px 0;
+
+    gap: 14px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+}
+
