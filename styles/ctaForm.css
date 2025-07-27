@@ -196,3 +196,42 @@ select, option {
     box-shadow: 0 0 0 0 rgba(255, 144, 0, 0);
   }
 }
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* Estado inicial: invisível e deslocado */
+.section-cta-form form input,
+.section-cta-form form select,
+.section-cta-form form button {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.6s ease;
+}
+
+/* Classe que será adicionada quando entrar na tela */
+.section-cta-form.animate-form form input,
+.section-cta-form.animate-form form select,
+.section-cta-form.animate-form form button {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Delay para os elementos aparecerem em cascata */
+.section-cta-form.animate-form form input:nth-child(1) { transition-delay: 0.2s; }
+.section-cta-form.animate-form form input:nth-child(2) { transition-delay: 0.4s; }
+.section-cta-form.animate-form form input:nth-child(3) { transition-delay: 0.6s; }
+.section-cta-form.animate-form form input:nth-child(4) { transition-delay: 0.8s; }
+.section-cta-form.animate-form form select:nth-of-type(1) { transition-delay: 1s; }
+.section-cta-form.animate-form form select:nth-of-type(2) { transition-delay: 1.2s; }
+.section-cta-form.animate-form form button { transition-delay: 1.4s; }
+

@@ -20,3 +20,23 @@ function scrollToFormulario() {
   }
 }
 
+
+// Detecta quando 50% da seção está visível
+const sectionFormulario = document.querySelector('.section-cta-form');
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        sectionFormulario.classList.add('animate-form');
+        observer.unobserve(sectionFormulario); // anima só uma vez
+      }
+    });
+  },
+  {
+    threshold: 0.3 // 50% visível
+  }
+);
+
+observer.observe(sectionFormulario);
+
