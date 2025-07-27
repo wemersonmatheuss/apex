@@ -115,3 +115,15 @@
     box-shadow: 0 0 0 0 rgba(255, 144, 0, 0);
   }
 }
+
+
+.agregar {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all 0.8s ease-out;
+}
+
+.agregar.animate-agregar {
+  opacity: 1;
+  transform: translateX(0);
+}

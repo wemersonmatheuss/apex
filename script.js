@@ -62,3 +62,61 @@ const observerCarrossel = new IntersectionObserver(
 observerCarrossel.observe(sectionCarrossel);
 
 
+// Animação da seção de clientes (efeito zoom stagger)
+const sectionClientes = document.querySelector('.clientes');
+
+const observerClientes = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        sectionClientes.classList.add('animate-clientes');
+        observerClientes.unobserve(sectionClientes); // anima só uma vez
+      }
+    });
+  },
+  {
+    threshold: 0.5
+  }
+);
+
+observerClientes.observe(sectionClientes);
+
+
+
+const metodoSection = document.querySelector('.metodo');
+
+const observerMetodo = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        metodoSection.classList.add('animate-metodo');
+        observerMetodo.unobserve(metodoSection);
+      }
+    });
+  },
+  {
+    threshold: 0.5
+  }
+);
+
+observerMetodo.observe(metodoSection);
+
+
+
+const agregarSection = document.querySelector('.agregar');
+
+const observerAgregar = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        agregarSection.classList.add('animate-agregar');
+        observerAgregar.unobserve(agregarSection);
+      }
+    });
+  },
+  {
+    threshold: 0.5
+  }
+);
+
+observerAgregar.observe(agregarSection);

@@ -56,3 +56,52 @@
     transform: translateX(-50%);
   }
 }
+
+/* Estado inicial */
+.clientes .images img {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.5s ease-out;
+}
+
+/* Classe ativada ao scroll */
+.clientes.animate-clientes .images img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Efeito de cascata com delay em cada logo */
+.clientes.animate-clientes .images img:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.clientes.animate-clientes .images img:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.clientes.animate-clientes .images img:nth-child(3) {
+  transition-delay: 0.5s;
+}
+.clientes.animate-clientes .images img:nth-child(4) {
+  transition-delay: 0.7s;
+}
+.clientes.animate-clientes .images img:nth-child(4) {
+  transition-delay: 0.9s;
+}
+.clientes.animate-clientes .images img:nth-child(4) {
+  transition-delay: 0.11s;
+}
+.clientes.animate-clientes .images img:nth-child(4) {
+  transition-delay: 0.13s;
+}
+.clientes.animate-clientes .images img:nth-child(4) {
+  transition-delay: 0.15s;
+}
+.clientes.animate-clientes .images img:nth-child(4) {
+  transition-delay: 0.17s;
+}
+.clientes.animate-clientes .images img:nth-child(4) {
+  transition-delay: 0.18s;
+}
+.clientes.animate-clientes .images img:nth-child(4) {
+  transition-delay: 0.20s;
+}
+
