@@ -66,6 +66,10 @@
 
     max-width: 190px;
 
+    opacity: 0;
+    transform: scale(0.15);
+    transition: all 0.6s ease-out;
+
 }
 
 .info-metodo h4 {
@@ -87,14 +91,6 @@
     margin-top: 5px;
 }
 
-
-
-
-.metodo .info-metodo {
-  opacity: 0;
-  transform: scale(0.15);
-  transition: all 0.6s ease-out;
-}
 
 /* Animação ativada */
 .metodo.animate-metodo .info-metodo:nth-of-type(1) {
@@ -151,5 +147,10 @@
     display: block;
   }
 
-  
+  .info-metodo {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 18px !important;
+  }
 }
