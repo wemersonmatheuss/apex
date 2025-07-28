@@ -151,17 +151,5 @@
     display: block;
   }
 
-  .description-metodo {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    margin-top: 16px;
-  }
-
-  .info-metodo {
-    display: block;
-    width: 90%;
-  }
+  
 }
