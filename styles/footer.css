@@ -43,3 +43,11 @@ footer .line {
 
     background: var(--color-linear-orange);
 }
+
+@media screen and (max-width: 450px) {
+    .footer-bottom {
+        flex-direction: column;
+
+        padding-bottom: 30px;
+    }
+}
