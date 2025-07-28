@@ -120,3 +120,29 @@ const observerAgregar = new IntersectionObserver(
 );
 
 observerAgregar.observe(agregarSection);
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwT_bJDMjTMDVELNa1FRabZk-uztDWIKHuyqYZVRUlwkkyDcd5vpA_XGx34zUKCpHrp/exec'; // troque por sua URL real
+
+  document.getElementById('meuFormulario').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    fetch(scriptURL, {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => {
+      if (response.ok) {
+        alert("Enviado com sucesso!");
+        this.reset(); // limpa o formulário
+      } else {
+        alert("Erro no envio. Verifique a planilha.");
+      }
+    })
+    .catch(error => {
+      alert("Erro ao enviar. Tente novamente.");
+      console.error("Erro:", error);
+    });
+  });
