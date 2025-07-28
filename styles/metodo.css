@@ -118,3 +118,40 @@
   transition-delay: 0.8s;
 }
 
+.mobile {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+  .metodo {
+    padding: 0;
+  }
+
+  .metodo .title h2 {
+    font-size: 28px;
+  }
+
+  .metodo .title h3 {
+    font-size: 18px;
+
+    margin: 0 auto;
+  }
+
+  .metodo .image img {
+    display: none;
+  }
+
+  .metodo .image .mobile {
+    display: block;
+
+    width: 300px;
+  }
+
+  .info-metodo {
+    max-width: 160px;
+    height: 100px;
+  }
+}
