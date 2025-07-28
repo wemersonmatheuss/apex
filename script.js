@@ -122,21 +122,35 @@ const observerAgregar = new IntersectionObserver(
 observerAgregar.observe(agregarSection);
 
 
-//  const scriptURL = 'https://script.google.com/macros/s/AKfycbzS5wyg5RctV5W9yB6S8G7NHPvs1RRvirbmZ30rJDhu752dwtH3yy3CMOApIZ56IkLO/exec';
-//   const form = document.getElementById('meuFormulario');
-//   const mensagem = document.getElementById('mensagem');
+ const form = document.getElementById("meuFormulario");
 
-//   form.addEventListener('submit', e => {
-//     e.preventDefault();
-//     const formData = new FormData(form);
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-//     fetch(scriptURL, { method: 'POST', body: formData })
-//       .then(response => {
-//         mensagem.innerText = "Dados enviados com sucesso!";
-//         form.reset();
-//       })
-//       .catch(error => {
-//         mensagem.innerText = "Erro ao enviar. Tente novamente.";
-//         console.error('Erro:', error);
-//       });
-//   });
+    const formData = new FormData(form);
+    const searchParams = new URLSearchParams();
+
+    formData.forEach((value, key) => {
+      searchParams.append(key, value);
+    });
+
+    fetch("https://script.google.com/macros/s/AKfycbw2jxdSMezDd0lOa19D3Nmn1vN87ueykYBWFFwJnA5z1ygszaChgZIOnQ7gpPxdtPJJ/exec", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: searchParams.toString(),
+    })
+    .then(response => response.text())
+    .then(text => {
+      if(text.trim() === "OK"){
+        form.reset();
+        // não precisa mostrar nada
+      } else {
+        console.error("Erro no envio:", text);
+      }
+    })
+    .catch(err => {
+      console.error("Erro ao enviar formulário:", err);
+    });
+  });
