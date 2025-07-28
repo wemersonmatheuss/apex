@@ -127,3 +127,41 @@
   opacity: 1;
   transform: translateX(0);
 }
+
+
+
+@media screen and (max-width: 450px) {
+  .agregar {
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+  .agregar .infos {
+    width: 100%;
+  }
+
+  .agregar .infos h2 {
+    font-size: 28px;
+
+    text-align: center;
+  }
+
+  .agregar .card-info .info p {
+    text-align: left;
+  }
+
+  .card {
+    width: 90%;
+
+    padding: 40px 20px;
+  }
+
+  .card h2 {
+    font-size: 24px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+}
