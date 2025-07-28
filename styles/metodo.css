@@ -147,7 +147,7 @@
 
   .metodo .image img:nth-child(2) {
     width: 300px;
-
+    height: auto;
     display: block;
   }
 
