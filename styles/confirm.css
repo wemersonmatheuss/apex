@@ -79,3 +79,17 @@
     box-shadow: 0 0 0 0 rgba(255, 144, 0, 0);
   }
 }
+
+@media screen and (max-width: 450px) {
+    .confirm {
+        width: 70%;
+    }
+
+    .confirm h2 {
+        font-size: 24px;
+    }
+
+    .confirm p {
+        font-size: 16px;
+    }
+}
