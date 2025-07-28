@@ -140,17 +140,17 @@
     margin: 0 auto;
   }
 
-  .metodo .image img {
+  .metodo .image img:nth-child(1) {
     display: none;
   }
 
-  .metodo .image .mobile {
-    display: block;
-
+  .metodo .image img:nth-child(2) {
     width: 300px;
+
+    display: block;
   }
 
-  .info-metodo {
+  .metodo .info-metodo {
     width: 150px;
     height: 100px;
   }
