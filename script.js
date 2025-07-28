@@ -134,6 +134,8 @@ observerAgregar.observe(agregarSection);
       searchParams.append(key, value);
     });
 
+    mesageEnviando.style.display = "block"
+
     fetch("https://script.google.com/macros/s/AKfycbw2jxdSMezDd0lOa19D3Nmn1vN87ueykYBWFFwJnA5z1ygszaChgZIOnQ7gpPxdtPJJ/exec", {
       method: "POST",
       headers: {
@@ -145,7 +147,8 @@ observerAgregar.observe(agregarSection);
     .then(text => {
       if(text.trim() === "OK"){
         form.reset();
-        // não precisa mostrar nada
+        card[0].style.display = "block"
+        mesageEnviando.style.display = "none"
       } else {
         console.error("Erro no envio:", text);
       }
@@ -154,3 +157,12 @@ observerAgregar.observe(agregarSection);
       console.error("Erro ao enviar formulário:", err);
     });
   });
+
+
+  const buttonConfirm = document.getElementById("buttonConfirm")
+  const card = document.getElementsByClassName("confirm")
+  const mesageEnviando = document.getElementById("mesageEnviando")
+
+  buttonConfirm.addEventListener("click", () => {
+      card[0].style.display = "none"
+  })
