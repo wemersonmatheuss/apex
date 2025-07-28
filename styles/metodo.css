@@ -128,6 +128,7 @@
 @media screen and (max-width: 450px) {
   .metodo {
     padding: 0;
+    
   }
 
   .metodo .title h2 {
@@ -150,8 +151,17 @@
     display: block;
   }
 
-  .metodo .info-metodo {
-    width: 150px;
-    height: 100px;
+  .description-metodo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .info-metodo {
+    display: block;
+    width: 90%;
   }
 }
