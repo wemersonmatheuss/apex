@@ -127,7 +127,7 @@
   border: none;
   cursor: pointer;
 
-    animation: pulseGlowGreen 2s infinite;
+  animation: pulseGlowGreen 2s infinite;
 
 
 }
@@ -204,3 +204,43 @@
 
 
 
+@media screen and (max-width: 450px) {
+  .carrossel {
+    gap: 60px;
+  }
+
+  .carrossel h2 {
+    font-size: 28px;
+
+    margin: 0;
+  }
+
+  .cards {
+    gap: 18px;
+  }
+
+  .card-wrapper {
+    max-width: 350px;
+    padding: 40px 20px;
+
+    border-radius: 30px;
+
+    gap: 20px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .title p {
+    text-align: center;
+  }
+
+  .arrow {
+    padding: 26px;
+  }
+
+  .left {
+    padding: 0px;
+  }
+}
