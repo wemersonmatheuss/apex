@@ -105,3 +105,18 @@
   transition-delay: 0.20s;
 }
 
+
+
+@media screen and (max-width: 450px) {
+  .clientes {
+    gap: 50px;
+  }
+
+  .clientes h2 {
+    font-size: 28px;
+  }
+
+  .images {
+    gap: 20px;
+  }
+}
