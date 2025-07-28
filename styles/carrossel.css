@@ -220,7 +220,8 @@
   }
 
   .card-wrapper {
-    max-width: 350px;
+    width: 320px;
+    height: 690px;
     padding: 40px 20px;
 
     border-radius: 30px;
@@ -237,7 +238,7 @@
   }
 
   .arrow {
-    padding: 26px;
+    padding: 10px;
   }
 
   .left {
