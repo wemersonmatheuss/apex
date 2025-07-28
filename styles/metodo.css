@@ -149,8 +149,14 @@
 
   .info-metodo {
     display: block !important;
-    width: 100% !important;
-    height: auto !important;
-    padding: 18px !important;
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    transition: none !important;
+  }
+
+  .description-metodo {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 }
